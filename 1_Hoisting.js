@@ -54,16 +54,40 @@ console.log(getname);
                               }
 */
 
-/*            // 5)  Arrow Function
-
-//console.log(getname);
-//getname();
-
+            // 5)  Arrow Function
+/*
+//Example 1: Arrow Function with No Argument
+var greet1 = () => {
+    console.log('Hello');
+}
+greet1(); // Hello
+*/
+/*
+//Example 2: Arrow Function with One Argument
+var greet2 = x => console.log(x);
+greet2('Hello'); // Hello 
+greet2();  //undefined
+greet2(x);  // not defiend
+*/
+/*
+//Example 3: Arrow Function as an Expression
+var age = 5;
+var welcome = (age < 18) ?
+  () => console.log('Baby') :
+  () => console.log('Adult');
+welcome(); // Baby
+*/
+/*
+//Example 4:
+//console.log(getname); //undefined
+//getname(); // getname is not a function
 var getname = () => {
     console.log("Hello");
 }
-output: getname is not a function
+console.log(getname); //function itself
+getname(); //Hello
 */
+
 
 /*           // 6) code with arrow function
 
